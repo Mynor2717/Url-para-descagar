@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background: #6990f2;
+}
+
+.caja {
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 35px;
+    background: #ffffff;
+    box-shadow: inset 9px 9px 18px #eeeeee,
+        inset -9px -9px 18px #f2f2f2;
+}
+
+.caja h1 {
+    margin-bottom: 10px;
+}
+
+.caja p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.introducir {
+    display: grid;
+}
+
+.introducir input {
+   width: 100%;
+   height: 60px;
+   outline: none;
+   font-size: 19px;
+   padding: 0 17px;
+   border-radius: 5px;
+   border: 1px solid #b3b2b2;
+   margin-bottom: 10px;
+}
+
+.introducir button {
+    opacity: 0.8;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 18px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #4285f4;
+    cursor: pointer;
+    font-size: 19px;
+    pointer-events: none;
+}
+
+.introducir input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
